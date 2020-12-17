@@ -61,15 +61,10 @@ This application requires Node.js and NPM installed locally on your computer, an
 
 ---
 
-## Created by *Vincent Shury*
+## Author
 
-*View more of my work here* 
-* [Github Profile](https://github.com/Vincent440)
-* [Portfolio](https://vincent440.github.io/)
-
-*Contact me here*
-* Email [vinceshury@gmail.com](mailto:vinceshury@gmail.com)
-* Call or Text [1 (216) 954-0020](tel:+1-216-954-0020)
-
-*Connect with me*
-* [LinkedIn-Vincent Shury](https://www.linkedin.com/in/vincent-shury/)
+**Vincent Shury**
+- [vshury.com](https://vshury.com/) Portfolio
+- [GitHub](https://github.com/Vincent440) Profile
+- [![Linkedin Badge](https://img.shields.io/badge/-Vincent_Shury-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vincent-shury/)](https://www.linkedin.com/in/VincentShury/)
+- [@VincentShury](https://twitter.com/VincentShury) Twitter
