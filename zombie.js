@@ -9,7 +9,7 @@ let playerLife = 70;
 let zombiePick = randNum(1, 5);
 let attack = randNum(1, 5);
 const newGameStartGreeting = "---------------------------<  Begin!  >---------------------------";
-console.log(`
+const welcomeMsg = `
 ---------------------------<  Zombie Node CLI  >---------------------------
 Welcome to the Zombie Node CLI game
 Defeat the Zombie before he brings your health to 0.
@@ -18,8 +18,9 @@ At the start of each round the Zombie will select a number between [ 1-5 ]
 You just need to try to guess that number correctly
 Guess correctly you will attack the Zombie [ 1-5 ]
 If you guess wrong the Zombie will attack you for a random amount between [ 1-5 ] 
-${newGameStartGreeting}`
-);
+${newGameStartGreeting}`;
+
+console.log(welcomeMsg);
 
 function setNewStats() {
   console.log("\n\n\n");
@@ -49,6 +50,7 @@ function setNewStats() {
       }
     });
 }
+
 function cheatOptionPrompt() {//CHEAT SETTINGS PROMPT TO MODIFY PLAYER AND ZOMBIE HEALTH
 
   console.log("\n\n");
@@ -73,6 +75,7 @@ function cheatOptionPrompt() {//CHEAT SETTINGS PROMPT TO MODIFY PLAYER AND ZOMBI
       }
     });
 }
+
 function gameReplayPrompt() {
   console.log("\n\n");
   inquirer
@@ -93,9 +96,11 @@ function gameReplayPrompt() {
       }
     });
 }
+
 function randNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 function gameLogic(userPick, zomPick) {
   console.log("\n Zombie rolled: " + zomPick);
   attack = randNum(1, 5);
@@ -113,6 +118,7 @@ function gameLogic(userPick, zomPick) {
     the Zombie's Health is: ${zombie}`);
   }
 }
+
 function nextTurn() {
   inquirer
     .prompt([
@@ -145,4 +151,5 @@ function nextTurn() {
       nextTurn();
     });
 }
+
 nextTurn();
